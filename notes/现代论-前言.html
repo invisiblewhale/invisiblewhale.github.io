@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>现代论-前言</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>现代论</h1>
+<h2>前言</h2>
+<p>《我们从哪里来？我们是谁？我们往哪里去？》这是高更在他的艺术中提出的问题，也是人类社会中最古老、最根本的问题，似乎我们在这个世界中的一切行为、思考、努力，都是为了回应这个问题。</p>
+<p>从童年时代开始，我就一直在思考这个问题的单数形式，那就是，作为个体的我究竟是谁？存在的意义又是什么？在不同的时期，我曾用自己的方式，给出不同的解答。在思考这些的过程中，我慢慢意识到一些其它的问题。首先是，这绝不是我个人化的问题。实际上对自我的认知和界定，也就是“我是谁”的问题，是每一个现代个体无法逃离的魔咒，是必须回答的疑问，不管这个主体是否意识到了这一点，是否明确的将这种问题提出来，它都深植在现代人的灵魂深处；其次，问题并不一定是通过答案来解答的。或者说，答案并不一定是我们通常所理解的那种形式。一个问题的解答，可以通过多种多样的形式来完成，比如，一种生活形式与态度、一种人生经历、一件艺术作品，甚至是一种深刻的沉默......尽管很多人没有意识到，他们的整个生命，全部的热情与挣扎，可能都仅仅是为了回答几个原初的问题。</p>
+<p>在成年以后，慢慢的我也开始思考这个问题的复数形式。开始关心我们的社会，我们生存的世界。其实这个问题的单复数形式是一致的。每一个个体的命运，深植在这个时代之中，深植在我们生存的世界中;而这个世界的深层内涵，这个时代的精神，也在每个人的身上，像树木的花朵一样绽释出来。</p>
+<p>我思考的问题：现代人的复杂而细微的感受、诸多的社会问题与事件、杂乱的各门学科的命题，似乎是不可协调和统一的。直到我意识到，它们都可以放在同一个主题下来探讨，那就是“现代”。</p>
+<p>我们将我们生存的时代，称之为现代。我们每个人，存在于其中，如水中浮蕊，不可避免的被其挟裹、迷惑和冲撞。现代，我以为它是我们不可逃避的命运，是一条没有选择的道路。</p>
+<p>那么，如果我们想要了解我们自己、我们生存的世界、我们的过去与未来......,我们就不可避免的要去探讨现代，探讨这几百年来席卷我们的洪流与风暴。不仅仅因为它是我们面临的现实，更因为它反映着我们看待现实的方法与视角。</p>
+<p>接下来，我们似乎不得不走向回答一个问题的道路——现代是什么？给现代一个定义，这是我不愿做的，确切的说，也是我没有能力去做的。</p>
+<p>现代的学者们似乎已经习惯了，给对象一个定义，再去研究对象的行为与属性，进而发展关于对象的理论。在关于现代的研究中，这却是不适用的。定义总是关于既定的事实，关于不可变易的原理。很多时候，它不过是僵死的教条罢了。而现代却是成长中的生命体，是尚未定型变动者。它的道路是我们不能完全计算和预测的，它的真实是我们不能完全看清的。更重要的是，构成现代的，不是别的东西，恰恰是我们自己，是我们以及我们的延伸物——我们的所作所为，我们的所思所想，我们的过去与未来，我们在宇宙间的建造与毁灭。即便是我们关于现代的定义和知识，也不过是现代的一个构成部分罢了，是一个特定时代，特定群体对他们生存于其中的现实的认知罢了。</p>
+<p>另外，在这本书中，我所使用的方法基本是哲学化的。哲学化思维的一个很重要功能，就是用来处理那些尚未被清楚的认知的事实，使得前概念化的东西概念化，前意识的东西意识化。而当这些概念和事实得以初步澄清，哲学也就往往退出了舞台。这些知识和内容，往往会独立成新的学科或研究领域，建立自己的研究方法。科学、社会学、心理学莫不如此。但我想，关于现代的研究，也许会是一个例外，哲学化的思维方法将始终发挥作用。这不仅仅是因为现代是变动不居的，它总有新的东西让我们难以理解，更重要的是，理解现代，实际上意味着理解我们自己，而自我认知是一个没有终点的过程。我们关于任何事物，包括我们自己的思考，都更新着我们的人性。而从特定角度上，现代的过程，恰恰是人类从黑暗与神话中觉醒，而不断的认知自我的过程。也许还有一点：现代牵扯到每一个学科和领域，牵扯到太多专门化的思想和方法。这些专门学科显然没有能力去理解和吸纳其它学科的成就。也许只有哲学，这位诞下众学科的母亲，还有能力去综观我们的世界图景。</p>
+<p>尽管我使用了哲学化的思维方式，这绝不意味着这是一本学术著作。它并不回应学术化的要求，也不刻意遵守任何学术规范。我使用这种方式，仅仅因为我思考和理解世界的方式本身就是哲学化的。哲学已经深入了我的骨髓，参与着我的生命内核的构建，影响着我思考和行为的准则。</p>
+<p>我写作这本书的目的，也绝不是参与任何学术讨论。我写作是因为我的思考需要表达。我思考最初是因为我对这个世界感到困惑不解，对人类的状况感到焦虑和不安。而随着思考的深入，我意识到，我身边的每一个人，这个时代的大众，都与我一样，或多或少的感到不安和困惑。因而，我渴望将我的思索和沉淀展示给更多的人。这些人跟我一样，感受着同样的时代精神，享用着同一社会的产物，也忍受着这个社会的全部负面因素。正是基于同样的根基，我的思索或许能给他们带来些许启发与抚慰。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

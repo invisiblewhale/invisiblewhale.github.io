@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>note-宝蓝册</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p>现代，可能不仅不是启蒙的产物，恰恰相反，它更像是启蒙失败的产物。</p>
+<h2></h2>
+<p>让我们回到过去，那里才是进步。——威尔第</p>
+<h2></h2>
+<p>公共领域是由进入它的人，以及这些人的行为和发表的内容决定的。<br />
+因此，如果富有思想的人因公共领域糟糕的状况而拒绝进入其中。那么真正意义上的公共领域就会很快萎缩和衰败，沦为俗常话语的垃圾场。</p>
+<h2></h2>
+<p>我现在开始反对海德格尔的观点了，在关于技术的问题上。<br />
+这段时间的工作经验使我意识到，技术，从来不是什么冰冷的东西。它不是海德格尔所说的世界的构型，或者座架。它不是纯粹唯物的或者由存在所决定的规则。<br />
+相反，技术中饱含着人性。它是双向的。这跟康德的观点很相似（比如康德关于时空的解释）。技术同时关联着人类以及世界的构造，它是一种中间物，而不是由其中任何一方单独决定的。</p>
+<h2></h2>
+<p>艺术永远不能被提升为一种绝对，因此它必须在知识上保持沉默。<br />
+对他来说，艺术就是媚俗，或者说艺术一旦预约了限制性的价值体系，就立刻成为媚俗。尤其是为艺术而艺术这一口号，尽管它表面上有一种贵族化的傲慢姿态，并产生了许多有力量的文学作品，但它实际上已经是一种媚俗。这就如在商业领域中，“生意就是生意”，这句行话已经包含了无耻奸商的虚伪，也正如在一场战争中，“战争就是战争”这一突出的格言，已经把战争转变为一场屠杀。<br />
+恶的真正诱人之处，魔鬼身上所具有的迷人特质，首先就是一种审美现象。<br />
+从最广义的“审美”上来看，那些坚持“生意就是生意”信条的商人，以及认为“战争就是战争”的政治家，都是处在“价值真空”中的审美化文人。在都为自己体系的自洽性而着迷这一点上，他们都是唯美主义者；而他们之所以成为杀人者，是因为他们准备为了这种自洽性，这种“优美的”一致性而牺牲掉任何东西。<br />
+人“并非万物的尺度”，而且，生命本身也不能作为所有人类事物的尺度。这些原则居于柏拉图政治哲学的中心。但是，所有的基督教或后基督教哲学都认为，生命就是最高的善或者价值本身，死亡是绝对无价值的。<br />
+死亡就其本身而言是无价值的......（我们）只能从它的相反的一极，从对死亡的观点中，才能经验到价值的意义。价值以为着对死亡的克服，或者更准确的说，意味着一种拯救性的直觉，它驱散了我们对死亡的意识。<br />
+“如果诗歌要达到人的净化和自我认同的话，那么他必须投入到人的自相矛盾之中。这与哲学家完全不同，因为哲学家仍然是在深渊的边缘，它不冒险进行跳跃，而只满足与对它所见之物进行分析”。——布洛赫</p>
+<h2></h2>
+<p>宗教徒最大的，而且一致的特点也许是:他们的封闭性。</p>
+<h2></h2>
+<p>现今，人们对待生活的方式是消除生活；人们对待世界的方式是不把它当作世界。<br />
+因为人们已无法承担世界和生活。</p>
+<h2></h2>
+<p>个性鲜明的人通常在人群中只是少数，尽管如此，他们还是常常要面对不如意的处境。<br />
+这种人通常更有创造力和感染力，但也往往需要更广阔的空间和更少的约束，世间很少有地方能真正让他们生长。<br />
+这种人的缺点也很明显。狭隘、偏激是他们常有的特性。他们也常常缺乏对他人的理解力和亲和力。<br />
+另外，个性是很难被培养的。我们的教育体系常常被指责抹杀了个性。这的确是事实。但我们的整个社会环境本来就难以接受真正的个性。</p>
+<h2></h2>
+<p>今天出去转，徜徉在山水间的时候，我想到了一些新的东西。<br />
+我似乎发现了一种可以使人真正高贵起来的东西。<br />
+我已经说过，现代人不可能还是高贵的，但似乎并非完全如此，世界总是还有窗口打开。放弃一切并不能使一个人高贵起来；艺术也不能使一个人高贵起来；美好的性情不可以，但性情是一个前提。<br />
+真正使人高贵起来的是一种关系。人和世界的关系。单独的一个人无论如何不可能是高贵的。但如果他把自己嵌入这个宇宙中，他却可以变得很高贵。<br />
+这是一种无法描述，也极难体验到的关系。一个人必须足够坚固，才能承担这种关系。</p>
+<h2></h2>
+<p>我的缺陷在于，我无法被使用。当我作为和发挥用途的时候，我不开心，也不适宜。<br />
+而人被使用，是社会中最普遍的现象，也是绝大多数人存在的目的。<br />
+可是，在现代社会中，似乎除了使用和被使用，没有任何出路。</p>
+<h2></h2>
+<p>现代是反信仰的吗？<br />
+它倾向消灭一切真正意义上的信仰吗？<br />
+有没有一个社会在充分品尝了现代的果实后，又抽身而退，重返信仰的怀抱？</p>
+<h2></h2>
+<p>如果我们将宗教的作用划分开来，界定它具有两种功能：<br />
+1. 回答人的最基本问题，即，我们是谁，从哪里来，到哪里去。<br />
+2. 确定社会的规范和法则，为人们如何生活提供指导。例如：男人、女人应当在社会中承担什么角色，婚礼如何举行，何时举行祭祀，财产如何继承等等。<br />
+不可否认，在任何时代，都有一些纯粹的宗教徒，即便在今天，宗教依然为一些人解决了世界观之类的终极问题。<br />
+但整体来说，宗教日益沦为一种世俗机构。它除了少量的人的生活规范之外，很难再提供什么。<br />
+（也许，宗教还提供了一些精神训练方法之类的东西：譬如，那些曾经一路跪拜走向圣地的人，不管是因为他们坚定的信仰，还是因为他们在精神上遭受过的严酷的训练，他们都足够坚定去面对这个世界；再譬如佛教也会教人通过禅定之类的方法获得宁静，只不过这些方法并非宗教所独有。）</p>
+<h2></h2>
+<p>禅宗的准则：“无好坏心，无分别心”。如果去实践这条准则的话，就要求人去放弃价值判断和道德判断，甚至审美倾向。他们说：“直指人心，见性成佛。”我不太理解。这个“性”是“本性”，难道人性的本质中不包含对这个世界的判断吗？还是说，人性的本质就是“空”？<br />
+我觉得，如果说世界的本质是“空”，这是更容易理解的，因为世界是无常的。那也就是说，人应当去接近这种本质，使人的本质与世界的本质同一。<br />
+但，难道反过来讲不是更好吗？人的本质难道不是想在这个无常的世界中建立常？佛教在无常的世界外设立一个恒常的佛难道不是为了做到这一点？<br />
+（我们也许可以通过审美的方式来看待禅宗。refer to 布洛赫的“价值真空”）</p>
+<h2></h2>
+<p>要真正实现现代社会的高效运作，必须以排除合作为前提。<br />
+因为合作的前提是人与人之间的理解和信任，现代体系下，这是不可能实现的。<br />
+现代经济运行方式要求人们在不需要真正交流和理解的前提下就实现运作与增长。<br />
+现代意义的“合作”实际上只剩下一种礼貌性的规范。<br />
+这种规范就是标准化、接口以及法律规范。<br />
+如同阿伦特指出的，分工暗示的是人的可替代性，而真正的合作暗示的是人的互补性、独特性与不可替代性，是个体成长与展示其风格的契机。</p>
+<h2></h2>
+<p>在现代社会中，人根本上是通过物联系起来的。<br />
+对于财产的不同层次的所有与需求，在生产与消费的关系链上所占有的不同位置，这些才是能够串联整个社会的关系。而人与人的关系，成了这种物与物的关系，以及人与物的关系的附属品。</p>
+<h2></h2>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
